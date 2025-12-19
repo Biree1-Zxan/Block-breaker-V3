@@ -431,6 +431,10 @@ function draw() {
   ctx.fillText(`Score: ${state.score}`, 14, 24);
   ctx.fillText(`Lives: ${state.lives}`, canvas.width - 80, 24);
 
+
+  ctx.save(); ctx.globalAlpha = 0.7; ctx.font = "12px system-ui, Arial"; ctx.fillStyle = "rgba(219,231,255,0.9)"; ctx.fillText("Made by Brian/Bzxanh", 12, canvas.height - 12); ctx.restore();
+
+
   // Overlay text
   if (!state.started && !state.gameOver) centerText("Press SPACE to launch", canvas.height * 0.55);
   if (state.paused && state.started && !state.gameOver) centerText("Paused (SPACE to resume)", canvas.height * 0.55);
