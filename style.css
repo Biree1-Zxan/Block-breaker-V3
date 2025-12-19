@@ -1,0 +1,21 @@
+:root { color-scheme: dark; }
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #0b1220;
+  color: #e8eefc;
+}
+h1 { margin: 18px 0 10px; font-size: 22px; font-weight: 700; }
+
+.wrap { display: grid; gap: 12px; justify-items: center; }
+canvas {
+  background: #071024;
+  border: 1px solid #223055;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.hint { opacity: 0.85; font-size: 14px; text-align: center; }
+.hint p { margin: 4px 0; }
